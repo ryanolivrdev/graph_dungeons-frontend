@@ -15,5 +15,3 @@ jobs:
 
       - name: match-tag-to-package-version
         uses: geritol/match-tag-to-package-version@master
-        with:
-          TAG_PREFIX: v
