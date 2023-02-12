@@ -7,7 +7,9 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
-		"prepare": "husky install && chmod ug+x .husky/* && chmod ug+x .git/hooks/* && npm i -g eslint"
+		"prepare": "husky install && chmod ug+x .husky/* && chmod ug+x .git/hooks/* && npm i -g eslint",
+		"pre-commit": "lint-staged",
+    "cm": "cz"
   },
   "dependencies": {
     "next": "13.1.6",
