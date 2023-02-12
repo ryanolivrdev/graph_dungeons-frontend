@@ -8,7 +8,6 @@
     "lint": "next lint",
     "start": "next start",
     "prepare": "husky install && chmod ug+x .husky/* && chmod ug+x .git/hooks/* && npm i -g eslint",
-    "pre-commit": "lint-staged",
     "cm": "cz",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -43,7 +42,6 @@
     "eslint-config-next": "13.1.6",
     "eslint-plugin-storybook": "^0.6.10",
     "husky": "^8.0.3",
-    "lint-staged": "^13.1.1",
     "postcss": "^8.4.14",
     "prettier": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.1",
