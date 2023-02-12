@@ -6,7 +6,8 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+		"prepare": "husky install && chmod ug+x .husky/* && chmod ug+x .git/hooks/* && npm i -g eslint"
   },
   "dependencies": {
     "next": "13.1.6",
@@ -15,6 +16,8 @@
     "zod": "^3.20.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
     "@types/node": "^18.11.18",
     "@types/prettier": "^2.7.2",
     "@types/react": "^18.0.26",
@@ -22,8 +25,13 @@
     "@typescript-eslint/eslint-plugin": "^5.47.1",
     "@typescript-eslint/parser": "^5.47.1",
     "autoprefixer": "^10.4.7",
+    "commitizen": "^4.3.0",
+    "commitizen-emoji": "^1.0.5",
+    "commitlint-config-gitmoji": "^2.3.1",
     "eslint": "^8.30.0",
     "eslint-config-next": "13.1.6",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1",
     "postcss": "^8.4.14",
     "prettier": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.1",
